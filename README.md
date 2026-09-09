@@ -2,7 +2,7 @@
 
 A robust, fault-tolerant Data Acquisition (DAQ) system featuring a custom ESP32 edge node and a multi-threaded Qt C++ desktop application. This project captures, buffers, and transmits real-time environmental and kinematic telemetry over a TCP Wi-Fi socket.
 
-![Overview Dashboard](/"Data logger"/Images/Screenshot%202026-09-06%20001534.png)
+![Overview Dashboard](Images/image_of_app_overview.png)
 
 ## System Architecture
 
@@ -27,7 +27,7 @@ The physical prototype is powered by a 9V battery and utilizes standard I2C and 
 *   **Environment:** DHT11 (Pin 4)
 *   **Kinematics:** ADXL345 (I2C)
 
-<img src="Images/image_b7cde0.png" width="45%"> <img src="Images/image_b7cda0.png" width="45%">
+<img src="Images/image_of_circuit_1.jpg" width="45%"> <img src="Images/image_of_circuit_2.jpg" width="45%">
 
 ## Software Features
 
@@ -35,17 +35,16 @@ The physical prototype is powered by a 9V battery and utilizes standard I2C and 
 The desktop client actively separates data streams into dedicated tabs, calculating running statistics on the fly.
 
 * **Environment Tab:** Tracks Temperature and Humidity.
-![Live Environment](Images/Screenshot%202026-09-06%20001556.png)
+![Live Environment](Images/image_of_app_temp_and_hum.png)
 
 * **Kinematics Tab:** Tracks X, Y, and Z acceleration vectors.
-![Live Kinematics](Images/Screenshot%202026-09-06%20001611.png)
+![Live Kinematics](Images/image_of_app_accelerometer.png)
 
 ### Offline History Parsing
 The software allows users to query the ESP32's onboard storage, download specific historical days, and parse the CSV files into static, analytical views without interrupting the background data collection.
 
-![History Dropdown](Images/Screenshot%202026-09-06%20001652.png)
-![Historical Environment](Images/Screenshot%202026-09-06%20001625.png)
-![Historical Kinematics](Images/Screenshot%202026-09-06%20001637.png)
+![History Dropdown](Images/image_of_app_history_dropdown.png)
+![Historical Data View](Images/image_of_app_history_view.png)
 
 ## How to Run
 
