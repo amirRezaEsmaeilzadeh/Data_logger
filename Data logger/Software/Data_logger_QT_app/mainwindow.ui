@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AetherData DAQ Studio</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_main">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_top">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text"><string>ESP32 IP Address:</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txtIpAddress">
+        <property name="text"><string>192.168.1.102</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnConnect">
+        <property name="text"><string>Connect</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRefreshList">
+        <property name="text"><string>Refresh History</string></property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation"><enum>Qt::Horizontal</enum></property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="window">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Overview">
+       <attribute name="title"><string>Overview</string></attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_1">
+        <item><widget class="QCustomPlot" name="dhtPlot" native="true"/></item>
+        <item><widget class="QCustomPlot" name="adxlPlot" native="true"/></item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title"><string>Environment</string></attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QCustomPlot" name="dhtPlot_3" native="true">
+          <property name="sizePolicy"><sizepolicy hsizetype="Expanding" vsizetype="Preferred"/></property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item><widget class="QTextEdit" name="envTextBox"><property name="readOnly"><bool>true</bool></property></widget></item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item><widget class="QComboBox" name="cmbEnvHistory"/></item>
+            <item><widget class="QPushButton" name="btnDownloadEnv"><property name="text"><string>Load View</string></property></widget></item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title"><string>Kinematics</string></attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QCustomPlot" name="adxlPlot_2" native="true">
+          <property name="sizePolicy"><sizepolicy hsizetype="Expanding" vsizetype="Preferred"/></property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item><widget class="QTextEdit" name="kinTextBox"><property name="readOnly"><bool>true</bool></property></widget></item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item><widget class="QComboBox" name="cmbKinHistory"/></item>
+            <item><widget class="QPushButton" name="btnDownloadKin"><property name="text"><string>Load View</string></property></widget></item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"><property name="geometry"><rect><x>0</x><y>0</y><width>850</width><height>25</height></rect></property></widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+</ui>

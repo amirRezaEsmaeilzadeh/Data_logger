@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../s91K601.svg</file>
+    </qresource>
+    <qresource prefix="/new/prefix1"/>
+</RCC>
