@@ -27,9 +27,9 @@ The physical prototype is powered by a 9V battery and utilizes standard I2C and 
 *   **Environment:** DHT11 (Pin 4)
 *   **Kinematics:** ADXL345 (I2C)
 
-![Circuit Wiring 1](Data%20logger/Images/image_of_circuit_1.jpg)
+![Circuit Wiring 1](Data%20logger/Images/image_of_circuit_1.png)
 
-![Circuit Wiring 2](Data%20logger/Images/image_of_circuit_2.jpg)
+![Circuit Wiring 2](Data%20logger/Images/image_of_circuit_2.png)
 
 ## Software Features
 
