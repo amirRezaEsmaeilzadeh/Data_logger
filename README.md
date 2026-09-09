@@ -27,7 +27,9 @@ The physical prototype is powered by a 9V battery and utilizes standard I2C and 
 *   **Environment:** DHT11 (Pin 4)
 *   **Kinematics:** ADXL345 (I2C)
 
-<img src="Images/image_of_circuit_1.jpg" width="45%"> <img src="Images/image_of_circuit_2.jpg" width="45%">
+![Circuit Wiring 1](Images/image_of_circuit_1.jpg)
+
+![Circuit Wiring 2](Images/image_of_circuit_2.jpg)
 
 ## Software Features
 
@@ -44,6 +46,7 @@ The desktop client actively separates data streams into dedicated tabs, calculat
 The software allows users to query the ESP32's onboard storage, download specific historical days, and parse the CSV files into static, analytical views without interrupting the background data collection.
 
 ![History Dropdown](Images/image_of_app_history_dropdown.png)
+
 ![Historical Data View](Images/image_of_app_history_view.png)
 
 ## How to Run
