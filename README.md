@@ -2,7 +2,7 @@
 
 A robust, fault-tolerant Data Acquisition (DAQ) system featuring a custom ESP32 edge node and a multi-threaded Qt C++ desktop application. This project captures, buffers, and transmits real-time environmental and kinematic telemetry over a TCP Wi-Fi socket.
 
-![Overview Dashboard](Images/Screenshot%202026-09-06%20001534.png)
+![Overview Dashboard](/"Data logger"/Images/Screenshot%202026-09-06%20001534.png)
 
 ## System Architecture
 
